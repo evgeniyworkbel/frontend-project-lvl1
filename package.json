@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "[![Actions Status](https://github.com/evgeniyworkbel/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/evgeniyworkbel/frontend-project-lvl1/actions)",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
