@@ -1,9 +1,7 @@
 import readlineSync from 'readline-sync';
 
 // Определение функции, дающее рандомное целое число
-const getRandomInt = (max) => {
-  return Math.floor(Math.random() * max);
-};
+const getRandomInt = (max) => Math.floor(Math.random() * max);
 
 // Определение функции игры на чётность
 const evenGame = () => {
