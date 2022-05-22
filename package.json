@@ -4,7 +4,8 @@
   "type": "module",
   "description": "[![Actions Status](https://github.com/evgeniyworkbel/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/evgeniyworkbel/frontend-project-lvl1/actions)",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "main": "index.js",
   "scripts": {
