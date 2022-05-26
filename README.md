@@ -11,3 +11,7 @@
 <b><h3>brain-calc</h3></b>
 
 [![asciicast](https://asciinema.org/a/EsJpjvmuPqkronfOsLfcVUkSc.svg)](https://asciinema.org/a/EsJpjvmuPqkronfOsLfcVUkSc)
+
+<b><h3>brain-calc</h3></b>
+
+[![asciicast](https://asciinema.org/a/Q2O2Mb9pQajJia0HVb5NhH2Ht.svg)](https://asciinema.org/a/Q2O2Mb9pQajJia0HVb5NhH2Ht)

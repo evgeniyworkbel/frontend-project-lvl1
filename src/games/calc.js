@@ -31,7 +31,7 @@ const calc = () => {
     }
 
     result = result.toString();
-    
+
     return [question, result];
   };
 
