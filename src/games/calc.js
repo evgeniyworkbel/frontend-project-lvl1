@@ -30,6 +30,8 @@ const calc = () => {
         result = null;
     }
 
+    result = result.toString();
+    
     return [question, result];
   };
 

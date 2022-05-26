@@ -16,7 +16,7 @@ const basisOfGames = (noteToGame, task) => {
     const answerUser = readlineSync.question('Your answer: ');
 
     // Константа для правильного ответа
-    const rightAnswer = pairOfQuestionAndResult[1].toString();
+    const rightAnswer = pairOfQuestionAndResult[1];
 
     // Сравнение ответа юзера и вычисленного ответа
     if (answerUser === rightAnswer) {
