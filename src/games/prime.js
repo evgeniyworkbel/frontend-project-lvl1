@@ -22,7 +22,7 @@ const prime = () => {
     };
 
     const question = `${number}`;
-    const result = (isPrime(number) === true ? 'yes' : 'no');
+    const result = (isPrime(number) ? 'yes' : 'no');
 
     return [question, result];
   };
