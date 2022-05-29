@@ -17,7 +17,7 @@ const evenGame = () => {
     const result = (isEven(number) ? 'yes' : 'no');
 
     return [question, result];
-  }
+  };
 
   basisOfGames(noteToEven, taskEven);
 };
