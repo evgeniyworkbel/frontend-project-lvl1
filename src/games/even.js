@@ -13,7 +13,7 @@ const evenGame = () => {
     // Определяем функцию для проверки на четность числа
     const isEven = (num) => num % 2 === 0;
 
-    const question = `${number}`;
+    const question = number;
     const result = (isEven(number) ? 'yes' : 'no');
 
     return [question, result];
