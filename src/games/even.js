@@ -1,40 +1,25 @@
-import readlineSync from 'readline-sync';
+import basisOfGames from '../index.js';
 import getRandomInt from '../getRandomInt.js';
 
 // Определение функции игры на чётность
 const evenGame = () => {
-  /* Приглашение и приветствие
-  (отнести их в отдельные функции не вышло из-за разных областей видимостей.
-  Так и не понял, как из локальной области приветствия подтянуть введенный юзернейм
-  в конец с congratulations) */
-  console.log('Welcome to the Brain Games!');
+  // Задание игры
+  const noteToEven = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-  // Начало цикла игры
-  for (let i = 0; i < 3; i += 1) {
+  // Вводные данные на игру
+  const taskEven = () => {
     const number = getRandomInt(100);
-    console.log('Question: ', number);
-    const answerUser = readlineSync.question('Your answer: ');
 
-    // Проверка на четность числа
-    const isEven = (number % 2 === 0);
+    // Определяем функцию для проверки на четность числа
+    const isEven = (num) => num % 2 === 0;
 
-    // Константа для правильного ответа
-    const rightAnswer = (isEven ? 'yes' : 'no');
+    const question = `${number}`;
+    const result = (isEven(number) ? 'yes' : 'no');
 
-    if ((isEven && answerUser === 'yes') || (!isEven && answerUser === 'no')) {
-      console.log('Correct!');
-    } else {
-      console.log(`"${answerUser}" is wrong answer ;(. Correct answer was "${rightAnswer}". \nLet's try again, ${userName}!`);
-      return;
-    }
+    return [question, result];
   }
 
-  console.log(`Congratulations, ${userName}!`);
+  basisOfGames(noteToEven, taskEven);
 };
 
 export default evenGame;
