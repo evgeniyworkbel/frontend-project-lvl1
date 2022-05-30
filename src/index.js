@@ -13,7 +13,7 @@ const basisOfGames = (noteToGame, task) => {
   for (let i = 0; i < 3; i += 1) {
     const pairOfQuestionAndResult = task();
 
-    console.log('Question: ', pairOfQuestionAndResult[0]);
+    console.log(`Question: ${pairOfQuestionAndResult[0]}`);
     const answerUser = readlineSync.question('Your answer: ');
 
     // Константа для правильного ответа
